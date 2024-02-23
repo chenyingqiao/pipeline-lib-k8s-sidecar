@@ -1,0 +1,27 @@
+{
+  "configurations": {
+    "run": {
+      "adapter": "vscode-go",
+      "default": true,
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}",
+        "mode": "debug",
+        "dlvToolPath": "$HOME/go/bin/dlv",
+        "trace": true
+      }
+    },
+    "run-unittest": {
+      "adapter": "vscode-go",
+      "default": true,
+      "configuration": {
+        "request": "launch",
+        "program": "${fileDirname}",
+        "mode": "test",
+        "dlvToolPath": "$HOME/go/bin/dlv",
+        "trace": true,
+		"args": ["^arg$"]
+      }
+    }
+  }
+}
